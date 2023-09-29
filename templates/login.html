@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Your login page content goes here -->
+<h1>Login</h1>
+<!-- Add login form and fields here -->
+<!-- Content -->
+<div class="container mt-5">
+    <h1></h1>
+    <form method="POST" action="/login">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" class="form-control" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" class="form-control" required>
+        <br>
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+    Don't have an account? <a href="/register">Register here</a>
+</div>
+{% endblock %}
